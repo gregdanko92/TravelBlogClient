@@ -18,6 +18,9 @@ class CityModel {
     static show(cityId){
          return fetch(`${url}/${cityId}`)
             .then((response)=> response.json())
+            .catch((err)=>{
+                console.log(err)
+            })
                 
     }
 }
